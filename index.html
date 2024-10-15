@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadPro - Lead Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LeadPro</h1>
+        <nav>
+            <ul>
+                <li><a href="#leads">Leads</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="leads">
+            <h2>Lead Listing</h2>
+            <input type="text" id="search" placeholder="Search by name, email, phone number">
+            <button onclick="addLead()">New Lead</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Status</th>
+                        <th>Created Date</th>
+                    </tr>
+                </thead>
+                <tbody id="leadTableBody">
+                    <!-- Leads will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="leadOverview">
+                <!-- Dashboard content can be added here -->
+            </div>
+        </section>
+
+        <section id="settings">
+            <h2>Settings</h2>
+            <div id="userProfile">
+                <!-- User profile settings can be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 LeadPro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
